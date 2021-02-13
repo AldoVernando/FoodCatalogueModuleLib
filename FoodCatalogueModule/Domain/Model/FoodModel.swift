@@ -8,12 +8,12 @@
 import Foundation
 
 public class FoodModel {
-    var id: String
-    var label: String
-    var nutrients: NutrientModel?
-    var category: String?
-    var categoryLabel: String?
-    var image: String
+    public var id: String
+    public var label: String
+    public var nutrients: NutrientModel?
+    public var category: String?
+    public var categoryLabel: String?
+    public var image: String
     
     public init(id: String, label: String?, nutrients: NutrientModel?, category: String?, categoryLabel: String? = "", image: String) {
         self.id = id
