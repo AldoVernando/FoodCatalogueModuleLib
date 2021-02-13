@@ -12,7 +12,7 @@ protocol FoodPresenterProtocol {
     func getFoodList(keyword: String, page: Int) -> Observable<[FoodModel]>
 }
 
-class FoodPresenter: FoodPresenterProtocol {
+public class FoodPresenter: FoodPresenterProtocol {
     
     private let foodInteractor: FoodUseCase
     
