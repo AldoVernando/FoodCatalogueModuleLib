@@ -15,7 +15,6 @@ final class Injection: NSObject {
     
     private func provideRepository() -> FoodRepositoryProtocol {
         let remote = provideRemoteDataSource()
-        let locale = provideLocaleDataSource()
         return FoodRepository(remote: remote, locale: locale)
     }
     
