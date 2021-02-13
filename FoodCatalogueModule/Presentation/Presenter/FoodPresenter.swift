@@ -16,11 +16,11 @@ public class FoodPresenter: FoodPresenterProtocol {
     
     private let foodInteractor: FoodUseCase
     
-    init() {
+    public init() {
         self.foodInteractor = Injection.init().provideInteractor()
     }
     
-    func getFoodList(keyword: String = "-", page: Int = 0) -> Observable<[FoodModel]> {
+    public func getFoodList(keyword: String = "-", page: Int = 0) -> Observable<[FoodModel]> {
         return foodInteractor.getFoodList(keyword: keyword, page: page)
     }
 }

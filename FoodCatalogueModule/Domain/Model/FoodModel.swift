@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FoodModel {
+public class FoodModel {
     var id: String
     var label: String
     var nutrients: NutrientModel?
@@ -15,7 +15,7 @@ class FoodModel {
     var categoryLabel: String?
     var image: String
     
-    init(id: String, label: String?, nutrients: NutrientModel?, category: String?, categoryLabel: String? = "", image: String) {
+    public init(id: String, label: String?, nutrients: NutrientModel?, category: String?, categoryLabel: String? = "", image: String) {
         self.id = id
         self.label = label ?? ""
         self.nutrients = nutrients
