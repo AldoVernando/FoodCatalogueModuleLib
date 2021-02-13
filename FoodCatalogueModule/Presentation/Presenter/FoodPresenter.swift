@@ -1,0 +1,26 @@
+//
+//  FoodPresenter.swift
+//  FoodCatalogueModule
+//
+//  Created by aldo vernando on 13/02/21.
+//
+
+import Foundation
+import RxSwift
+
+protocol FoodPresenterProtocol {
+    func getFoodList(keyword: String, page: Int) -> Observable<[FoodModel]>
+}
+
+class FoodPresenter: FoodPresenterProtocol {
+    
+    private let foodInteractor: FoodUseCase
+    
+    init() {
+        self.foodInteractor = Injection.init().provideInteractor()
+    }
+    
+    func getFoodList(keyword: String = "-", page: Int = 0) -> Observable<[FoodModel]> {
+        return foodInteractor.getFoodList(keyword: keyword, page: page)
+    }
+}
