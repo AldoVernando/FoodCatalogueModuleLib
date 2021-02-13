@@ -11,8 +11,6 @@
 		B53C7A6325D7BB6000D29C31 /* FoodCatalogueModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B53C7A5925D7BB6000D29C31 /* FoodCatalogueModule.framework */; };
 		B53C7A6825D7BB6000D29C31 /* FoodCatalogueModuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C7A6725D7BB6000D29C31 /* FoodCatalogueModuleTests.swift */; };
 		B53C7A6A25D7BB6000D29C31 /* FoodCatalogueModule.h in Headers */ = {isa = PBXBuildFile; fileRef = B53C7A5C25D7BB6000D29C31 /* FoodCatalogueModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B53C7A7825D7BB8300D29C31 /* FoodEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C7A7725D7BB8300D29C31 /* FoodEntity.swift */; };
-		B53C7A8925D7BDC500D29C31 /* LocaleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C7A8825D7BDC500D29C31 /* LocaleDataSource.swift */; };
 		B53C7A8F25D7BEBC00D29C31 /* RemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C7A8E25D7BEBC00D29C31 /* RemoteDataSource.swift */; };
 		B53C7A9E25D7BEF300D29C31 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C7A9D25D7BEF300D29C31 /* Endpoint.swift */; };
 		B53C7AA225D7BEFB00D29C31 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53C7AA125D7BEFB00D29C31 /* Constant.swift */; };
@@ -50,8 +48,6 @@
 		B53C7A6225D7BB6000D29C31 /* FoodCatalogueModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodCatalogueModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B53C7A6725D7BB6000D29C31 /* FoodCatalogueModuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCatalogueModuleTests.swift; sourceTree = "<group>"; };
 		B53C7A6925D7BB6000D29C31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B53C7A7725D7BB8300D29C31 /* FoodEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodEntity.swift; sourceTree = "<group>"; };
-		B53C7A8825D7BDC500D29C31 /* LocaleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaleDataSource.swift; sourceTree = "<group>"; };
 		B53C7A8E25D7BEBC00D29C31 /* RemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteDataSource.swift; sourceTree = "<group>"; };
 		B53C7A9D25D7BEF300D29C31 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		B53C7AA125D7BEFB00D29C31 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -143,25 +139,15 @@
 			children = (
 				B53C7AA925D7BF4100D29C31 /* Model */,
 				B53C7A8725D7BDAE00D29C31 /* Data Source */,
-				B53C7A7625D7BB7000D29C31 /* Entities */,
 				B53C7AB425D7BFCE00D29C31 /* Repository */,
 				B53C7A9425D7BECA00D29C31 /* Utils */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		B53C7A7625D7BB7000D29C31 /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				B53C7A7725D7BB8300D29C31 /* FoodEntity.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
 		B53C7A8725D7BDAE00D29C31 /* Data Source */ = {
 			isa = PBXGroup;
 			children = (
-				B53C7A8825D7BDC500D29C31 /* LocaleDataSource.swift */,
 				B53C7A8E25D7BEBC00D29C31 /* RemoteDataSource.swift */,
 			);
 			path = "Data Source";
@@ -436,7 +422,6 @@
 				B53C7AB625D7BFE300D29C31 /* FoodRepository.swift in Sources */,
 				B53C7AC925D7C0A600D29C31 /* FoodInteractor.swift in Sources */,
 				B53C7ACE25D7C0DD00D29C31 /* FoodPresenter.swift in Sources */,
-				B53C7A8925D7BDC500D29C31 /* LocaleDataSource.swift in Sources */,
 				B53C7AB125D7BFAF00D29C31 /* NutrientResponse.swift in Sources */,
 				B53C7A8F25D7BEBC00D29C31 /* RemoteDataSource.swift in Sources */,
 				B53C7AE125D7C18500D29C31 /* Injection.swift in Sources */,
@@ -444,7 +429,6 @@
 				B53C7ABD25D7C04300D29C31 /* FoodModel.swift in Sources */,
 				B53C7A9E25D7BEF300D29C31 /* Endpoint.swift in Sources */,
 				B53C7AAB25D7BF5700D29C31 /* FoodResponse.swift in Sources */,
-				B53C7A7825D7BB8300D29C31 /* FoodEntity.swift in Sources */,
 				B53C7AA625D7BF0100D29C31 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
