@@ -20,10 +20,10 @@ s.source = { :git => "https://github.com/AldoVernando/FoodCatalogueModuleLib.git
 s.framework = "UIKit"
  
 s.source_files = "FoodCatalogueModule/**/*.{swift}"
-s.dependency = "Alamofire"
-s.dependency = "RealmSwift"
-s.dependency = "SDWebImage"
-s.dependency = "RxSwift"
+s.dependency = 'Alamofire'
+s.dependency = 'RealmSwift'
+s.dependency = 'SDWebImage'
+s.dependency = 'RxSwift'
  
 #s.resources = "Core/**/*.{png,jpeg,jpg,storyboard,xib,xcassets}"
  
