@@ -15,11 +15,9 @@ protocol FoodRepositoryProtocol {
 class FoodRepository: FoodRepositoryProtocol {
     
     private let remote: RemoteDataSourceProtocol
-    private let locale: LocaleDataSourceProtocol
     
-    init(remote: RemoteDataSourceProtocol, locale: LocaleDataSourceProtocol) {
+    init(remote: RemoteDataSourceProtocol) {
         self.remote = remote
-        self.locale = locale
     }
     
     func getFoodList(keyword: String = "-", page: Int = 0) -> Observable<[FoodModel]> {
