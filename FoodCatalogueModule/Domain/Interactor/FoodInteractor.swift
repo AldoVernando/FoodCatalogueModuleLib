@@ -8,11 +8,11 @@
 import Foundation
 import RxSwift
 
-protocol FoodUseCase {
+public protocol FoodUseCase {
     func getFoodList(keyword: String, page: Int) -> Observable<[FoodModel]>
 }
 
-class FoodInteractor: FoodUseCase {
+public class FoodInteractor: FoodUseCase {
     
     private let foodRepository: FoodRepositoryProtocol
     
@@ -20,7 +20,7 @@ class FoodInteractor: FoodUseCase {
         self.foodRepository = repository
     }
     
-    func getFoodList(keyword: String = "", page: Int = 0) -> Observable<[FoodModel]> {
+    public func getFoodList(keyword: String = "", page: Int = 0) -> Observable<[FoodModel]> {
         return foodRepository.getFoodList(keyword: keyword, page: page)
     }
 }

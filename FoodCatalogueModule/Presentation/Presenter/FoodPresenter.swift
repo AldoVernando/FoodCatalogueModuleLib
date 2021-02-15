@@ -16,8 +16,8 @@ public class FoodPresenter: FoodPresenterProtocol {
     
     private let foodInteractor: FoodUseCase
     
-    public init() {
-        self.foodInteractor = Injection.init().provideInteractor()
+    public init(interactor: FoodInteractor) {
+        self.foodInteractor = interactor
     }
     
     public func getFoodList(keyword: String = "-", page: Int = 0) -> Observable<[FoodModel]> {

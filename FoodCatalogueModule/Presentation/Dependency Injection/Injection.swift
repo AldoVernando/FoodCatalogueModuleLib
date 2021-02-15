@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Injection: NSObject {
+public class Injection: NSObject {
     
     private func provideRemoteDataSource() -> RemoteDataSourceProtocol {
         return RemoteDataSource()
@@ -18,7 +18,7 @@ final class Injection: NSObject {
         return FoodRepository(remote: remote)
     }
     
-    func provideInteractor() -> FoodUseCase {
+    public func provideInteractor() -> FoodUseCase {
         let foodRepository = provideRepository()
         return FoodInteractor(repository: foodRepository)
     }
